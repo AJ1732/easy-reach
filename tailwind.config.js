@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"],
+        circularStd: ["Circular Std", "sans-serif"],
+        magnivera: ["Magnivera Trial", "sans-serif"],
+        euclid: ["Euclid Circular A", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

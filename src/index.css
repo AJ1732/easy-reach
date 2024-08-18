@@ -1,6 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Magnivera Trial";
+  src: url("./assets/fonts/magnivera-trial/MagniveraTrial-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std-medium-500.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("./assets/fonts/euclid-circular-a/Euclid\ Circular\ A\ Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("./assets/fonts/euclid-circular-a/Euclid\ Circular\ A\ Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("./assets/fonts/euclid-circular-a/Euclid\ Circular\ A\ Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
 
 
 .content-grid {
