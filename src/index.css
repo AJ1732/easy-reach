@@ -42,10 +42,10 @@
 
 .content-grid {
   /* spacing variables */
-  --padding-inline: 1.5rem;
-  --content-max-width: 1200px;
-  --breakout-max-width: 1440px;
-  --layout-max-width: 1280px;
+  --padding-inline: 1rem;
+  --content-max-width: 1210px;
+  --breakout-max-width: 1280px;
+  --layout-max-width: 1440px;
 
   --breakout-size: calc(
     (var(--breakout-max-width) - var(--content-max-width)) / 2
