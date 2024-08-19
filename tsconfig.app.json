@@ -18,13 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"],
-  "baseUrl": ".",
+    "noFallthroughCasesInSwitch": true,
+
+    // Absolute routing
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
+  },
+  "include": ["src"]
 }

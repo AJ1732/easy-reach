@@ -1,3 +1,5 @@
+import { ButtonLink } from "@/components";
+
 function App() {
   return (
     <div className="content-grid space-y-8 py-4">
@@ -12,9 +14,14 @@ function App() {
         </div>
       </div>
 
-      <div>
+      <div className="space-y-2">
         <h2>Buttons</h2>
-        <div>Component</div>
+        <div className="flex gap-4">
+          <ButtonLink>Button</ButtonLink>
+          <ButtonLink variant={"primary-round"}>Button</ButtonLink>
+          <ButtonLink variant={"secondary"}>Button</ButtonLink>
+          <ButtonLink variant={"secondary-round"}>Button</ButtonLink>
+        </div>
       </div>
     </div>
   );
