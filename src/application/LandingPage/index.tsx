@@ -1,7 +1,11 @@
+import { Footer, Navbar } from "@/components";
+
 const LandingPage = () => {
   return (
-    <div className="content-grid min-h-dvh">
-      <div>LandingPage</div>
+    <div className="content-grid">
+      <Navbar />
+      <div className="mt-32 min-h-dvh">LandingPage</div>
+      <Footer />
     </div>
   );
 };
