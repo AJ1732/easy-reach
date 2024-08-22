@@ -12,7 +12,8 @@ const LandingPage = () => {
   return (
     <div className="content-grid">
       <Navbar />
-      <div className="mt-32 min-h-dvh">
+
+      <div className="full-width content-grid min-h-dvh">
         <HeroSection />
         <FeatureSection />
         <AboutSection />
@@ -20,6 +21,7 @@ const LandingPage = () => {
         <BlogSection />
         <ContactSection />
       </div>
+      
       <Footer />
     </div>
   );
