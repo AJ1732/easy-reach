@@ -9,13 +9,12 @@ const BlogCard: React.FC<BlogCardProps> = ({ src, title, content }) => {
 
       <div className="space-y-2.5 *:leading-5 *:tracking-wide">
         <h3 className="text-xl font-bold text-dark">
-          {title ? title : "Title Placeholder"}
+          {title || "Title Placeholder"}
         </h3>
 
         <p className="text-justify text-sm font-medium text-grey">
-          {content
-            ? content
-            : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur excepturi harum et perspiciatis esse at hic facere earum modi."}
+          {content ||
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur excepturi harum et perspiciatis esse at hic facere earum modi."}
         </p>
       </div>
     </article>

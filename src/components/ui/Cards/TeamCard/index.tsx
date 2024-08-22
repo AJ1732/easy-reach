@@ -9,10 +9,10 @@ const TeamCard: React.FC<TeamCardProps> = ({ src, fullName, position }) => {
 
       <div>
         <h3 className="font-circularStd text-[1.45rem] font-medium leading-[2.75rem]">
-          {fullName ? fullName : "Full Name Placeholder"}{" "}
+          {fullName || "Full Name Placeholder"}{" "}
         </h3>
         <p className="text-xl font-normal leading-10">
-          {position ? position : "PP, Position Placeholder"}
+          {position || "PP, Position Placeholder"}
         </p>
       </div>
     </article>

@@ -16,13 +16,12 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
       <div className="space-y-2.5 font-raleway">
         <h3 className="text-xl font-bold tracking-[0.035rem] text-dark">
-          {title ? title : "Title Placeholder"}
+          {title || "Title Placeholder"}
         </h3>
 
         <p className="text-justify text-sm font-medium leading-5 tracking-wide text-grey">
-          {content
-            ? content
-            : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloremque delectus animi neque possimus corporis, blanditiis ab rem dolorum quia."}
+          {content ||
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloremque delectus animi neque possimus corporis, blanditiis ab rem dolorum quia."}
         </p>
       </div>
 
@@ -32,11 +31,11 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         </figure>
 
         <h4 className="mr-auto font-medium text-black/70">
-          {author ? author : "Author Placeholder"}
+          {author || "Author Placeholder"}
         </h4>
 
         <p className="text-sm font-light italic text-grey">
-          {readMins ? readMins : "5 mins read"}
+          {readMins || "5 mins read"}
         </p>
       </div>
     </article>
