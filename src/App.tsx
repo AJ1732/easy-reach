@@ -1,4 +1,11 @@
-import { ArticleCard, BlogCard, ButtonLink, FeatureCard, TeamCard } from "@/components";
+import {
+  ArticleCard,
+  BlogCard,
+  ButtonLink,
+  FeatureCard,
+  SectionHeading,
+  TeamCard,
+} from "@/components";
 
 function App() {
   return (
@@ -63,12 +70,32 @@ function App() {
             <h4>Team Card</h4>
             <TeamCard />
           </div>
-          
+
           <div className="space-y-2">
             <h4>Article Card</h4>
             <ArticleCard />
           </div>
         </div>
+      </div>
+
+      {/* HEADING */}
+      <div className="space-y-2">
+        <SectionHeading title="abou" before="before:content-['about']" />
+        <SectionHeading
+          title="our fresh articles"
+          before="before:content-['our_fresh_articles']"
+        />
+
+        <SectionHeading
+          title="about us"
+          line
+          before="before:content-['about_us']"
+        />
+        <SectionHeading
+          title="features "
+          line
+          before="before:content-['features']"
+        />
       </div>
     </div>
   );

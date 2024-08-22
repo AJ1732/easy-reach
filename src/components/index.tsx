@@ -4,6 +4,7 @@ export { default as Footer } from "./layout/Footer";
 
 // UI COMPONENTS
 export { default as ButtonLink } from "./ui/ButtonLink";
+export { default as SectionHeading } from "./ui/SectionHeading";
 // card components
 export { default as BlogCard } from "./ui/Card/BlogCard";
 export { default as TeamCard } from "./ui/Card/TeamCard";
