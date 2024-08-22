@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/utils/cn";
+import { cva } from "class-variance-authority";
 import { ButtonLinkProps } from "@/types/buttonlink";
+import { cn } from "@/utils/cn";
 
 const ButtonLink: React.FC<ButtonLinkProps> = ({
   type,
@@ -16,7 +16,10 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
     return (
       <Link
         to={link}
-        className={cn(buttonVariants({ variant, className }))}
+        className={cn(
+          "inline-block w-fit",
+          buttonVariants({ variant, className })
+        )}
       >
         {children}
       </Link>
@@ -37,7 +40,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
 export default ButtonLink;
 
 export const buttonVariants = cva(
-  "flex items-center text-white justify-center gap-5 px-4 py-3 whitespace-nowrap text-sm font-medium font-euclid ring-offset-white focus-visible:outline-none focus-visible:ring-2 rounded-sm leading-none focus-visible:ring-neutral-100 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 transition-all duration-300 active:scale-[0.99]",
+  "flex items-center text-white justify-center gap-5 px-4 py-3 whitespace-nowrap text-sm font-medium font-euclid focus-visible:outline-none rounded-sm disabled:pointer-events-none disabled:opacity-50 transition-all duration-300 active:scale-[0.98]",
   {
     variants: {
       variant: {
