@@ -18,7 +18,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
         to={link}
         className={cn(
           "inline-block w-fit",
-          buttonVariants({ variant, className })
+          buttonVariants({ variant, className }),
         )}
       >
         {children}
@@ -53,5 +53,5 @@ export const buttonVariants = cva(
     defaultVariants: {
       variant: "primary",
     },
-  }
+  },
 );

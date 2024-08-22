@@ -2,18 +2,18 @@ import { FeatureCardProps } from "@/types/card/featurecard";
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content }) => {
   return (
-    <article className="space-y-2 font-raleway max-w-[32.4375rem]">
+    <article className="max-w-[32.4375rem] space-y-2 font-raleway">
       <header className="space-y-8">
-        <div className="size-14 bg-secondary-op rounded-full flex justify-center items-center">
+        <div className="flex size-14 items-center justify-center rounded-full bg-secondary-op">
           {icon ? icon : <div className="size-6 bg-black"></div>}
         </div>
 
-        <h3 className="font-bold tracking-wider text-dark text-[1.625rem]">
+        <h3 className="text-[1.625rem] font-bold tracking-wider text-dark">
           {title ? title : "Title Placeholder"}
         </h3>
       </header>
 
-      <p className="font-medium text-base tracking-wide  text-grey text-justify leading-[1.5625rem]">
+      <p className="text-justify text-base font-medium leading-[1.5625rem] tracking-wide text-grey">
         {content
           ? content
           : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dignissimos earum fuga provident impedit pariatur dolore corporis temporibus rem molestiae."}

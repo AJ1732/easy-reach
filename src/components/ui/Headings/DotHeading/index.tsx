@@ -10,8 +10,8 @@ const DotHeading: React.FC<DotHeadingProps> = ({
   return (
     <h3
       className={cn(
-        "flex justify-start gap-2 items-center font-medium font-circularStd uppercase to-black/70 text-xl",
-        className
+        "flex items-center justify-start gap-2 to-black/70 font-circularStd text-xl font-medium uppercase",
+        className,
       )}
     >
       <span className={cn(dotVariants({ variant, className }))} /> {title}
