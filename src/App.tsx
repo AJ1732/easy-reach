@@ -1,4 +1,4 @@
-import { BlogCard, ButtonLink, FeatureCard, TeamCard } from "@/components";
+import { ArticleCard, BlogCard, ButtonLink, FeatureCard, TeamCard } from "@/components";
 
 function App() {
   return (
@@ -62,6 +62,11 @@ function App() {
           <div className="space-y-2">
             <h4>Team Card</h4>
             <TeamCard />
+          </div>
+          
+          <div className="space-y-2">
+            <h4>Article Card</h4>
+            <ArticleCard />
           </div>
         </div>
       </div>
