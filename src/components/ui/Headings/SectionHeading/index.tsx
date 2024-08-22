@@ -1,12 +1,7 @@
 import { cn } from "@/utils/cn";
+import { SectionHeadingProps } from "@/types/headings";
 
-interface Props {
-  title: string;
-  line?: boolean;
-  before: string;
-  className?: string;
-}
-const SectionHeading: React.FC<Props> = ({
+const SectionHeading: React.FC<SectionHeadingProps> = ({
   title,
   line,
   before,

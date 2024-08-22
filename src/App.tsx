@@ -2,6 +2,7 @@ import {
   ArticleCard,
   BlogCard,
   ButtonLink,
+  DotHeading,
   FeatureCard,
   SectionHeading,
   TeamCard,
@@ -80,22 +81,37 @@ function App() {
 
       {/* HEADING */}
       <div className="space-y-2">
-        <SectionHeading title="abou" before="before:content-['about']" />
-        <SectionHeading
-          title="our fresh articles"
-          before="before:content-['our_fresh_articles']"
-        />
+        <div className="space-y-2">
+          <h4>Section Headings</h4>
 
-        <SectionHeading
-          title="about us"
-          line
-          before="before:content-['about_us']"
-        />
-        <SectionHeading
-          title="features "
-          line
-          before="before:content-['features']"
-        />
+          <div>
+            <SectionHeading title="abou" before="before:content-['about']" />
+            <SectionHeading
+              title="our fresh articles"
+              before="before:content-['our_fresh_articles']"
+            />
+
+            <SectionHeading
+              title="about us"
+              line
+              before="before:content-['about_us']"
+            />
+            <SectionHeading
+              title="features "
+              line
+              before="before:content-['features']"
+            />
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <h4>Dot Headings</h4>
+
+          <div>
+            <DotHeading title="mission" variant="primary" />
+            <DotHeading title="vission" variant="secondary" />
+          </div>
+        </div>
       </div>
     </div>
   );
