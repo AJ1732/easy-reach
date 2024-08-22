@@ -1,4 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
+import { DashboardApp, LandingPage } from "@/application";
 import App from "../App";
 
 export const router = createBrowserRouter([
@@ -9,12 +10,16 @@ export const router = createBrowserRouter([
         <App />
       </>
     ),
-    // children: [
-    //   {
-    //     path: "/",
-    //     element: <HomePage />,
-    //   },
-    // ]
+    children: [
+      {
+        path: "/",
+        element: <LandingPage />,
+      },
+      {
+        path: "/dashboard",
+        element: <DashboardApp />,
+      },
+    ]
   },
   {
     path: "/*",

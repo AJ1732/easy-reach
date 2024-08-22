@@ -8,7 +8,7 @@ export { default as ButtonLink } from "./ui/ButtonLink";
 export { default as SectionHeading } from "./ui/Headings/SectionHeading";
 export { default as DotHeading } from "./ui/Headings/DotHeading";
 // card components
-export { default as BlogCard } from "./ui/Card/BlogCard";
-export { default as TeamCard } from "./ui/Card/TeamCard";
-export { default as FeatureCard } from "./ui/Card/FeatureCard";
-export { default as ArticleCard } from "./ui/Card/ArticleCard";
+export { default as BlogCard } from "./ui/Cards/BlogCard";
+export { default as TeamCard } from "./ui/Cards/TeamCard";
+export { default as FeatureCard } from "./ui/Cards/FeatureCard";
+export { default as ArticleCard } from "./ui/Cards/ArticleCard";

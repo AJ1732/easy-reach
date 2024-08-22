@@ -1,50 +1,119 @@
-# React + TypeScript + Vite
+# EazyReach
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Introduction](#introduction)
+- [Folder Structure](#folder-structure)
+- [Components Overview](#components-overview)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Introduction
 
-## Expanding the ESLint configuration
+Welcome to **EazyReach**, where resources meet opportunity, A revolutionary platform designed to empower citizens, reduce poverty, and tackle youth unemployment in Nigeria. This project is a modern web application, with the user interface built using [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/) and other frontend technologies. The project follows a well-organized structure to ensure scalability and maintainability.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Folder Structure
 
-- Configure the top-level `parserOptions` property like this:
+The project is organized into the following directories:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+.
+├── src
+│   ├── application
+│   │   ├── DashboardApp
+│   │   │   └── index.tsx
+│   │   ├── LandingPage
+│   │   │   └── index.tsx
+│   │   └── index.tsx
+│   ├── assets
+│   │   ├── fonts
+│   │   └── react.svg
+│   ├── components
+│   │   ├── layout
+│   │   │   ├── Footer
+│   │   │   └── Navbar
+│   │   ├── ui
+│   │   │   ├── ButtonLink
+│   │   │   ├── Cards
+│   │   │   └── Headings
+│   │   └── index.tsx
+│   ├── routes
+│   │   └── router.tsx
+│   ├── types
+│   │   ├── buttonlink.ts
+│   │   ├── card
+│   │   │   ├── articlecard.ts
+│   │   │   ├── blogcard.ts
+│   │   │   ├── featurecard.ts
+│   │   │   └── teamcard.ts
+│   │   └── headings.ts
+│   ├── utils
+│   │   └── cn.ts
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── vite-env.d.ts
+│   └── ...
+├── public
+│   └── ...
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── netlify.toml
+├── ...
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Key Directories
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **`src/application`**: Contains the main application pages or modules, such as the Dashboard and Landing Page.
+- **`src/assets`**: Holds static assets like fonts and images.
+- **`src/components`**: 
+  - **`layout`**: Contains layout components such as the `Footer` and `Navbar`.
+  - **`ui`**: Contains reusable UI components, organized into subdirectories like `ButtonLink`, `Cards`, and `Headings`.
+- **`src/routes`**: Manages the application's routing.
+- **`src/types`**: TypeScript type definitions, particularly for card components like `articlecard.ts`, `blogcard.ts`, etc.
+- **`src/utils`**: Utility functions, such as `cn.ts` for handling class names.
+- **`src/index.css`**: Global CSS for the project.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Components Overview
+
+### Layout Components
+- **Footer**: The footer component used across the application.
+- **Navbar**: The navigation bar for the application.
+
+### UI Components
+- **ButtonLink**: A reusable button component that handles click events and navigation links.
+- **Cards**: 
+  - **ArticleCard**: Displays information about articles.
+  - **BlogCard**: Specifically designed for blog posts.
+  - **FeatureCard**: Highlights features of the application.
+  - **TeamCard**: Showcases team members.
+- **Headings**: Custom heading components with additional styles or functionalities.
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AJ1732/easy-reach.git
+   cd easy-reach
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the app**:
+   - Visit `http://localhost:5173` in your browser.
+
+## Contributing
+
+We welcome contributions to this project! Please read the [contributing guidelines](CONTRIBUTING.md) for more details.
