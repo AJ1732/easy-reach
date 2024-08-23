@@ -1,6 +1,6 @@
+import { NavLink, useLocation } from "react-router-dom";
 import { ButtonLink } from "@/components";
 import { cn } from "@/utils/cn";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navlink = [
@@ -17,6 +17,12 @@ const Navbar = () => {
       link: "/blog",
     },
   ];
+
+  const location = useLocation();
+  const currentPath = location.pathname;
+
+  console.log(currentPath);
+
   return (
     <header className="full-width content-grid fixed w-full py-8">
       <nav className="itce flex items-center justify-between">
@@ -37,6 +43,8 @@ const Navbar = () => {
                     cn(
                       `relative flex items-center justify-center p-2.5 before:absolute before:bottom-0 before:size-[0.375rem] before:rounded-full`,
                       isActive && "before:bg-white",
+                      isActive && currentPath === "/blog" && "before:bg-dark",
+                      currentPath === "/blog" && "text-dark",
                     )
                   }
                 >
