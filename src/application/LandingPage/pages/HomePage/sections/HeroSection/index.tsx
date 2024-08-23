@@ -6,6 +6,7 @@ const HeroSection = () => {
   return (
     <section className="full-width content-grid h-[64rem] overflow-hidden bg-secondary-500">
       <div className="full-width flex items-start justify-between">
+        {/* HERO CONTENT */}
         <div className="flex size-full justify-end bg-white pr-12 pt-32">
           <div className="flex w-[35.625rem] flex-col items-start gap-[6.25rem]">
             <div className="mt-40 space-y-5">
@@ -33,8 +34,9 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* HERO IMAGE */}
         <div className="mt-32 flex size-full justify-start">
-          <div className="w-[37rem] bg-green-500">
+          <div className="w-[37rem] bg-primary-600">
             <img
               src={heroImage}
               className="size-full object-cover"
