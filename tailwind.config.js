@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
-        circularStd: ["Circular Std", "sans-serif"],
+        circularStd: ["CircularStd", "sans-serif"],
         magnivera: ["Magnivera Trial", "sans-serif"],
         euclid: ["Euclid Circular A", "sans-serif"],
       },

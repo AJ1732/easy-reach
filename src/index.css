@@ -11,13 +11,13 @@
   font-style: normal;
   font-weight: 500;
 }
-
+/* 
 @font-face {
   font-family: "Circular Std";
   src: url("./assets/fonts/circular-std-medium-500.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
-}
+} */
 
 .content-grid {
   /* spacing variables */
