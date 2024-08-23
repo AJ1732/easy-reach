@@ -1,6 +1,6 @@
-import heroImage from "@/assets/images/eazy-hero-image.jpeg";
 import { ButtonLink } from "@/components";
 import { ArrowRight } from "@/components/svgs";
+import heroImage from "@/assets/images/eazy-hero-image.jpeg";
 
 const HeroSection = () => {
   return (
