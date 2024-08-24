@@ -16,7 +16,7 @@ const useNavScrolAnimation = () => {
       }
       lastScrollY = window.scrollY;
 
-      if (window.scrollY >= 50) {
+      if (window.scrollY >= 950) {
         setNavColor(true);
       } else {
         setNavColor(false);

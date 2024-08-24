@@ -1,27 +1,13 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { ButtonLink } from "@/components";
+import { useNavScrollAnimation } from "@/hooks";
 import { cn } from "@/utils/cn";
 
 const Navbar = () => {
-  const navlink = [
-    {
-      name: "home",
-      link: "/",
-    },
-    {
-      name: "about",
-      link: "/about",
-    },
-    {
-      name: "blog",
-      link: "/blog",
-    },
-  ];
-
   const location = useLocation();
   const currentPath = location.pathname;
 
-  console.log(currentPath);
+  const [navColor] = useNavScrollAnimation();
 
   return (
     <header className="full-width content-grid fixed z-50 w-full py-8">
@@ -41,10 +27,12 @@ const Navbar = () => {
                   to={link}
                   className={({ isActive }) =>
                     cn(
-                      `relative flex items-center justify-center p-2.5 before:absolute before:bottom-0 before:size-[0.375rem] before:rounded-full`,
+                      `relative flex items-center justify-center p-2.5 transition-colors duration-300 before:absolute before:bottom-0 before:size-[0.375rem] before:rounded-full`,
                       isActive && "before:bg-white",
                       isActive && currentPath === "/blog" && "before:bg-dark",
+                      isActive && navColor && "before:bg-secondary-500",
                       currentPath === "/blog" && "text-dark",
+                      navColor && "text-secondary-500",
                     )
                   }
                 >
@@ -62,4 +50,20 @@ const Navbar = () => {
     </header>
   );
 };
+
 export default Navbar;
+
+const navlink = [
+  {
+    name: "home",
+    link: "/",
+  },
+  {
+    name: "about",
+    link: "/about",
+  },
+  {
+    name: "blog",
+    link: "/blog",
+  },
+];
