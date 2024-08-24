@@ -24,8 +24,8 @@ const Navbar = () => {
   console.log(currentPath);
 
   return (
-    <header className="full-width content-grid fixed w-full py-8">
-      <nav className="itce flex items-center justify-between">
+    <header className="full-width content-grid fixed z-50 w-full py-8">
+      <nav className="flex items-center justify-between">
         <h1 className="bg-primary-500 px-14 py-4 text-lg font-medium uppercase text-white">
           LOGO
         </h1>
