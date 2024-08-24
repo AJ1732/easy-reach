@@ -1,6 +1,7 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import { DashboardApp, LandingPage } from "@/application";
 import { AboutPage, BlogPage, HomePage } from "@/application/LandingPage/pages";
+import { TopScroll } from "@/utils/TopScroll";
 import App from "../App";
 
 export const router = createBrowserRouter([
@@ -8,6 +9,7 @@ export const router = createBrowserRouter([
     path: "/",
     element: (
       <>
+        <TopScroll />
         <App />
       </>
     ),
