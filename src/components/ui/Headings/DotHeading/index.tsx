@@ -10,7 +10,7 @@ const DotHeading: React.FC<DotHeadingProps> = ({
   return (
     <h3
       className={cn(
-        "flex items-center justify-start gap-2 to-black/70 font-circularStd text-xl font-medium uppercase",
+        "flex items-center justify-start gap-6 to-black/70 font-circularStd text-xl font-medium uppercase",
         className,
       )}
     >
