@@ -1,4 +1,9 @@
-import { AboutSection, HeroSection, MissionVisionSection } from "./sections";
+import {
+  AboutSection,
+  HeroSection,
+  MissionVisionSection,
+  OurTeamSection,
+} from "./sections";
 
 const AboutPage = () => {
   return (
@@ -6,6 +11,7 @@ const AboutPage = () => {
       <HeroSection />
       <AboutSection />
       <MissionVisionSection />
+      <OurTeamSection />
     </div>
   );
 };
