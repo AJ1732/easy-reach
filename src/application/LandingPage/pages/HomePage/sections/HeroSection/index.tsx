@@ -36,13 +36,13 @@ const HeroSection = () => {
 
         {/* HERO IMAGE */}
         <div className="mt-32 flex size-full justify-start">
-          <div className="w-[37rem] bg-primary-600">
+          <figure className="w-[37rem] bg-primary-600">
             <img
               src={heroImage}
               className="size-full object-cover"
               alt="Three female children smiling happily and in traditional attire"
             />
-          </div>
+          </figure>
         </div>
       </div>
     </section>
