@@ -40,7 +40,7 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
 export default ButtonLink;
 
 export const buttonVariants = cva(
-  "flex items-center text-white justify-center gap-5 px-4 py-3 whitespace-nowrap text-sm font-medium font-euclid focus-visible:outline-none rounded-sm disabled:pointer-events-none disabled:opacity-50 transition-all duration-300 active:scale-[0.98]",
+  "flex items-center text-white justify-center gap-5 px-4 py-3 whitespace-nowrap text-sm font-medium font-euclid leading-none focus-visible:outline-none rounded-sm disabled:pointer-events-none disabled:opacity-50 transition-all duration-300 active:scale-[0.98]",
   {
     variants: {
       variant: {

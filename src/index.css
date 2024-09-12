@@ -27,7 +27,7 @@
 .content-grid {
   /* spacing variables */
   --padding-inline: 1rem;
-  --content-max-width: 1210px;
+  --content-max-width: 80rem;
   --breakout-max-width: 1280px;
   --layout-max-width: 1440px;
 
