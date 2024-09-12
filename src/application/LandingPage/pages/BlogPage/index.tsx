@@ -1,4 +1,4 @@
-import { HeadlineSection, LastestSection, SubscribeSection } from "./sections";
+import { ArticleSection, HeadlineSection, LastestSection, SubscribeSection } from "./sections";
 
 const BlogPage = () => {
   return (
@@ -6,6 +6,7 @@ const BlogPage = () => {
       <HeadlineSection />
       <LastestSection />
       <SubscribeSection />
+      <ArticleSection />
     </div>
   );
 };
