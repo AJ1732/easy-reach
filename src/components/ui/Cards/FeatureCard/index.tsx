@@ -2,7 +2,7 @@ import { FeatureCardProps } from "@/types/card/featurecard";
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, content }) => {
   return (
-    <article className="max-w-[32.4375rem] space-y-2 font-raleway">
+    <article className="max-w-[37.5rem] space-y-2 font-raleway">
       <header className="space-y-8">
         <div className="flex size-14 items-center justify-center rounded-full bg-secondary-op">
           {icon || <div className="size-6 bg-black"></div>}
