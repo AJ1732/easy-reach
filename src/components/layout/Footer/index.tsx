@@ -2,8 +2,8 @@ import { footerLinks } from "./constant";
 
 const Footer = () => {
   return (
-    <footer className="full-width content-grid space-y-[6.25rem] bg-primary-500 py-[6.25rem] font-circularStd text-white">
-      <div className="flex flex-wrap items-start justify-between">
+    <footer className="full-width content-grid ~space-y-[2.75rem]/[6.25rem] bg-primary-500 ~py-[4rem]/[6.25rem] font-circularStd text-white">
+      <div className="grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-4">
         {footerLinks.map(({ heading, links }) => (
           <div key={heading} className="space-y-5 font-circularStd">
             <h3 className="text-lg font-black uppercase">{heading}</h3>
