@@ -4,7 +4,7 @@ import aboutUsImage from "@/assets/images/eazy-about-us-image.jpeg";
 const AboutSection = () => {
   return (
     <section className="full-width content-grid size-full  py-32">
-      <div className="flex items-center justify-start gap-20">
+      <div className="flex items-center max-lg:flex-col justify-start gap-20">
         <figure className="h-[43.1875rem] w-[34.3125rem] bg-primary-600">
           <img
             src={aboutUsImage}

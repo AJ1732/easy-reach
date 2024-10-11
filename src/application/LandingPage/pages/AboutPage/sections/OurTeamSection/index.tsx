@@ -6,19 +6,19 @@ const OurTeamSection = () => {
       <DotHeading title="our team" variant="primary" />
 
       <div>
-        <header className="space-y-2">
-          <h3 className="font-circularStd text-3xl font-bold text-black">
+        <header className="space-y-2 max-lg:text-center">
+          <h3 className="font-circularStd ~text-xl/3xl font-bold text-black">
             Meet Our Dedicated Team
           </h3>
 
-          <p className="text-lg text-grey">
+          <p className="~text-sm/lg text-grey">
             a passionate group dedicated to sustainable agriculture and a
             greener future.
           </p>
         </header>
       </div>
 
-      <div className="flex items-start justify-between">
+      <div className="flex flex-wrap items-start justify-center gap-10 lg:justify-between">
         {teamData.map((item) => (
           <TeamCard key={item.id} {...item} />
         ))}

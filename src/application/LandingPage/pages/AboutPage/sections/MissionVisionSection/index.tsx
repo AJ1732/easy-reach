@@ -5,7 +5,7 @@ const MissionVisionSection = () => {
   return (
     <section className="space-y-40 py-10">
       {/* OUR MISSION */}
-      <article className="flex items-start justify-between">
+      <article className="flex items-start justify-between max-lg:flex-col-reverse max-lg:gap-10">
         <div className="max-w-[38.3125rem]">
           <DotHeading title="our mission" variant="primary" />
           <p className="mt-8 font-circularStd text-lg leading-[200%] text-grey">
@@ -23,7 +23,7 @@ const MissionVisionSection = () => {
           </p>
         </div>
 
-        <figure className="w-[31.25rem] rounded-2xl">
+        <figure className="max-w-[31.25rem] rounded-2xl">
           <img
             src={tractorImage}
             className="size-full rounded-2xl object-cover"
@@ -33,7 +33,7 @@ const MissionVisionSection = () => {
       </article>
 
       {/* OUR VISION */}
-      <article className="flex flex-row-reverse items-start justify-between">
+      <article className="flex flex-row-reverse items-start justify-between max-lg:flex-col-reverse max-lg:gap-10">
         <div className="max-w-[38.3125rem]">
           <DotHeading title="our vision" variant="secondary" />
           <p className="mt-8 font-circularStd text-lg leading-[200%] text-grey">
@@ -52,7 +52,7 @@ const MissionVisionSection = () => {
           </p>
         </div>
 
-        <figure className="w-[31.25rem] rounded-2xl">
+        <figure className="max-w-[31.25rem] rounded-2xl">
           <img
             src={tractorImage}
             className="size-full rounded-2xl object-cover"
