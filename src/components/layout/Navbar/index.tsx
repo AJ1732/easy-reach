@@ -16,8 +16,9 @@ const Navbar = () => {
           LOGO
         </h1>
 
-        <div className="flex items-center justify-end gap-20">
-          <ul className="flex items-center justify-center gap-[3.75rem] p-2.5">
+        {/* DESKTOP NAVLINKS */}
+        <div className="~gap-8/20 flex items-center justify-end max-md:hidden">
+          <ul className="~gap-[2.5rem]/[3.75rem] flex items-center justify-center p-2.5">
             {navlink.map(({ name, link }) => (
               <li
                 key={name}
@@ -46,6 +47,9 @@ const Navbar = () => {
             contact us
           </ButtonLink>
         </div>
+
+        {/* MOBILE TOGGLE */}
+        <div className="size-8 rounded-md bg-black md:hidden"></div>
       </nav>
     </header>
   );
