@@ -3,7 +3,7 @@ import { contactData } from "./constant";
 const ContactSection = () => {
   return (
     <section className="~pb-32/56 ~pt-20/40">
-      <div className="flex items-start justify-between ~gap-16/0 max-md:flex-col">
+      <div className="~gap-16/0 flex items-center justify-between max-md:flex-col md:items-start">
         <div className="~space-y-8/16 max-w-[30rem] font-circularStd">
           {contactData.map(({ title, iconClass, text }) => (
             <div key={title} className="flex items-center justify-start gap-7">
