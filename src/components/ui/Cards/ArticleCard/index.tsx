@@ -9,8 +9,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   readMins,
 }) => {
   return (
-    <article className="max-w-[22.5rem] space-y-6">
-      <figure className="h-60 w-[22.5rem] bg-secondary-op">
+    <article className="~max-w-[20rem]/[22.5rem] space-y-6">
+      <figure className="h-60 w-full bg-secondary-op">
         <img src={src} alt="Image alt text" />
       </figure>
 
