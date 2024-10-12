@@ -13,18 +13,18 @@ const ArrowRight: React.FC<SvgsIconsProps> = ({ className }) => {
       <path
         d="M19.24 7.90665L27.3333 16L19.24 24.0933"
         stroke="white"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M4.66666 16H27.1067"
         stroke="white"
-        stroke-width="2"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
