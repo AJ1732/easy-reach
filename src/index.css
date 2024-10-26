@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +7,27 @@
 
 @font-face {
   font-family: "Magnivera Trial";
-  src: url("./assets/fonts/magnivera-trial/MagniveraTrial-Medium.otf") format("opentype");
+  src: url("./assets/fonts/magnivera-trial/MagniveraTrial-Medium.otf")
+    format("opentype");
   font-style: normal;
   font-weight: 500;
 }
-
+/* 
 @font-face {
   font-family: "Circular Std";
   src: url("./assets/fonts/circular-std-medium-500.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
-}
+} */
 
-@font-face {
-  font-family: "Euclid Circular A";
-  src: url("./assets/fonts/euclid-circular-a/Euclid\ Circular\ A\ Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
+:root {
+  @apply scroll-smooth;
 }
-
-@font-face {
-  font-family: "Euclid Circular A";
-  src: url("./assets/fonts/euclid-circular-a/Euclid\ Circular\ A\ Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Euclid Circular A";
-  src: url("./assets/fonts/euclid-circular-a/Euclid\ Circular\ A\ Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-}
-
 
 .content-grid {
   /* spacing variables */
   --padding-inline: 1rem;
-  --content-max-width: 1210px;
+  --content-max-width: 80rem;
   --breakout-max-width: 1280px;
   --layout-max-width: 1440px;
 

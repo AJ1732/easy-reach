@@ -1,11 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
+
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: {
+    files: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    extract,
+  },
   theme: {
+    screens,
+    fontSize,
     extend: {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
-        circularStd: ["Circular Std", "sans-serif"],
+        circularStd: ["CircularStd", "sans-serif"],
         magnivera: ["Magnivera Trial", "sans-serif"],
         euclid: ["Euclid Circular A", "sans-serif"],
       },
@@ -23,5 +31,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [ fluid({
+    checkSC144: false // default: true
+  })],
 };
