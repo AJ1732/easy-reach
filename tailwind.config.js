@@ -12,6 +12,7 @@ export default {
     fontSize,
     extend: {
       fontFamily: {
+        jost: ["Jost", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
         circularStd: ["CircularStd", "sans-serif"],
         magnivera: ["Magnivera Trial", "sans-serif"],
@@ -31,7 +32,9 @@ export default {
       },
     },
   },
-  plugins: [ fluid({
-    checkSC144: false // default: true
-  })],
+  plugins: [
+    fluid({
+      checkSC144: false, // default: true
+    }),
+  ],
 };
