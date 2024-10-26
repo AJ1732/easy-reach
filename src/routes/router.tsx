@@ -5,13 +5,23 @@ import { TopScroll } from "@/utils/TopScroll";
 import App from "../App";
 
 // LAZY LOAD COMPONENTS
-const DashboardApp = lazy(() => import("@/application/DashboardApp"));
 const LandingPage = lazy(() => import("@/application/LandingPage"));
 const HomePage = lazy(() => import("@/application/LandingPage/pages/HomePage"));
+const BlogPage = lazy(() => import("@/application/LandingPage/pages/BlogPage"));
 const AboutPage = lazy(
   () => import("@/application/LandingPage/pages/AboutPage"),
 );
-const BlogPage = lazy(() => import("@/application/LandingPage/pages/BlogPage"));
+
+const DashboardApp = lazy(() => import("@/application/DashboardApp"));
+const LoginPage = lazy(
+  () => import("@/application/DashboardApp/pages/LoginPage"),
+);
+const SignupPage = lazy(
+  () => import("@/application/DashboardApp/pages/SignupPage"),
+);
+const PlatformPage = lazy(
+  () => import("@/application/DashboardApp/pages/PlatformPage"),
+);
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +67,23 @@ export const router = createBrowserRouter([
           },
         ],
       },
+
+      {
+        path: "/login",
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <LoginPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/signup",
+        element: (
+          <Suspense fallback={<LoadingSpinner />}>
+            <SignupPage />
+          </Suspense>
+        ),
+      },
       {
         path: "/dashboard",
         element: (
@@ -64,6 +91,16 @@ export const router = createBrowserRouter([
             <DashboardApp />
           </Suspense>
         ),
+        children: [
+          {
+            path: "/dashboard",
+            element: (
+              <Suspense fallback={<LoadingSpinner />}>
+                <PlatformPage />
+              </Suspense>
+            ),
+          },
+        ],
       },
     ],
   },

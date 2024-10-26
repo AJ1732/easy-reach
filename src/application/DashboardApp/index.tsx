@@ -1,4 +1,6 @@
+import { Outlet } from "react-router-dom";
+
 const DashboardApp = () => {
-  return <div>DashboardApp</div>;
+  return <Outlet />;
 };
 export default DashboardApp;
