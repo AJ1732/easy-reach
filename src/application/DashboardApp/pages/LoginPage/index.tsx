@@ -16,7 +16,7 @@ const LoginPage = () => {
             key={role}
             className="space-y-9 rounded-3xl bg-[#FAFAFA] p-6 text-center shadow-[0px_1px_4px_3px_rgba(0,_0,_0,_0.10)]"
           >
-            <div className="h-[22.25rem] w-[26.625rem] rounded-[1.25rem] bg-[#ddd]">
+            <div className="h-[22.25rem] w-[26.625rem] rounded-[1.25rem] bg-[#ddd] flex justify-center items-center">
               {src}
             </div>
             <p className="text-3xl font-medium leading-6">{role}</p>
