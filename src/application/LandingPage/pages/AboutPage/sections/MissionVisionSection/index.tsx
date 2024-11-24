@@ -5,7 +5,7 @@ const MissionVisionSection = () => {
   return (
     <section className="space-y-40 py-10">
       {/* OUR MISSION */}
-      <article className="flex items-start justify-between max-lg:flex-col-reverse max-lg:gap-10">
+      <article className="flex items-center justify-between max-lg:flex-col-reverse max-lg:gap-10 lg:items-start">
         <div className="max-w-[38.3125rem]">
           <DotHeading title="our mission" variant="primary" />
           <p className="mt-8 font-circularStd text-lg leading-[200%] text-grey">
@@ -33,7 +33,7 @@ const MissionVisionSection = () => {
       </article>
 
       {/* OUR VISION */}
-      <article className="flex flex-row-reverse items-start justify-between max-lg:flex-col-reverse max-lg:gap-10">
+      <article className="flex flex-row-reverse items-center justify-between max-lg:flex-col-reverse max-lg:gap-10 lg:items-start">
         <div className="max-w-[38.3125rem]">
           <DotHeading title="our vision" variant="secondary" />
           <p className="mt-8 font-circularStd text-lg leading-[200%] text-grey">
