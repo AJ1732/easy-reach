@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className="full-width content-grid fixed z-50 w-full py-8">
       <nav className="flex items-center justify-between">
         <h1 className="bg-primary-500 px-14 py-4 text-lg font-medium uppercase text-white">
-          LOGO
+          EazyReach
         </h1>
 
         {/* DESKTOP NAVLINKS */}
