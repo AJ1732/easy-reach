@@ -6,8 +6,6 @@
 - [Folder Structure](#folder-structure)
 - [Components Overview](#components-overview)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -113,7 +111,3 @@ To run this project locally, follow these steps:
 
 4. **Open the app**:
    - Visit `http://localhost:5173` in your browser.
-
-## Contributing
-
-We welcome contributions to this project! Please read the [contributing guidelines](CONTRIBUTING.md) for more details.
