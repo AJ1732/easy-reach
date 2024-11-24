@@ -1,4 +1,5 @@
 import { DotHeading, TeamCard } from "@/components";
+import { teamData } from "./constants";
 
 const OurTeamSection = () => {
   return (
@@ -7,11 +8,11 @@ const OurTeamSection = () => {
 
       <div>
         <header className="space-y-2 max-lg:text-center">
-          <h3 className="font-circularStd ~text-xl/3xl font-bold text-black">
+          <h3 className="font-circularStd font-bold text-black ~text-xl/3xl">
             Meet Our Dedicated Team
           </h3>
 
-          <p className="~text-sm/lg text-grey">
+          <p className="text-grey ~text-sm/lg">
             a passionate group dedicated to sustainable agriculture and a
             greener future.
           </p>
@@ -19,22 +20,11 @@ const OurTeamSection = () => {
       </div>
 
       <div className="flex flex-wrap items-start justify-center gap-10 lg:justify-between">
-        {teamData.map((item) => (
-          <TeamCard key={item.id} {...item} />
+        {teamData.map((team) => (
+          <TeamCard key={team.id} {...team} />
         ))}
       </div>
     </section>
   );
 };
 export default OurTeamSection;
-
-const teamData = [
-  { id: 1, fullName: "Mustapha Kayode", position: "CEO" },
-  {
-    id: 2,
-    fullName: "Mustapha Babatunde",
-    position: "Head, HR and Production",
-  },
-  { id: 3, fullName: "Olabode Akeem", position: "Head, Sales and Marketing" },
-  { id: 4, fullName: "Orobisi Michael", position: "Head, IT and Finance" },
-];

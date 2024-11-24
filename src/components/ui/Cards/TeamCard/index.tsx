@@ -3,8 +3,12 @@ import { TeamCardProps } from "@/types/card/teamcard";
 const TeamCard: React.FC<TeamCardProps> = ({ src, fullName, position }) => {
   return (
     <article className="max-w-[16.35rem] space-y-7">
-      <figure className="h-96 w-[16.35rem] bg-secondary-op">
-        <img src={src} alt="Image alt text" />
+      <figure className="h-96 w-[16.35rem] overflow-hidden bg-secondary-op">
+        <img
+          src={src}
+          alt="Image alt text"
+          className="size-full object-cover"
+        />
       </figure>
 
       <div>

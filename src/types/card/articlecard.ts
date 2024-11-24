@@ -4,5 +4,5 @@ export interface ArticleCardProps {
   content?: string;
   avatar?: string;
   author?: string;
-  readMins?: string;
+  readMins?: number;
 }
