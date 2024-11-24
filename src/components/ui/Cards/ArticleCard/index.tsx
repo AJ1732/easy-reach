@@ -9,9 +9,13 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   readMins,
 }) => {
   return (
-    <article className="~max-w-[20rem]/[22.5rem] space-y-6">
-      <figure className="h-60 w-full bg-secondary-op">
-        <img src={src} alt="Image alt text" />
+    <article className="space-y-6 ~max-w-[20rem]/[22.5rem]">
+      <figure className="h-60 w-full overflow-hidden bg-secondary-op">
+        <img
+          src={src}
+          alt="Image alt text"
+          className="size-full object-cover"
+        />
       </figure>
 
       <div className="space-y-2.5 font-raleway">
@@ -26,8 +30,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
       </div>
 
       <div className="flex items-center justify-between gap-4 font-circularStd">
-        <figure className="size-10 rounded-full bg-secondary-op">
-          <img src={avatar} alt="avatar" className="text-sm" />
+        <figure className="size-10 overflow-hidden rounded-full bg-secondary-op">
+          <img src={avatar} alt="avatar" className="-mt-2 text-sm" />
         </figure>
 
         <h4 className="mr-auto font-medium text-black/70">
@@ -35,7 +39,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         </h4>
 
         <p className="text-sm font-light italic text-grey">
-          {readMins || "5 mins read"}
+          {`${readMins || 5} mins read`}
         </p>
       </div>
     </article>

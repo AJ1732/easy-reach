@@ -1,4 +1,5 @@
 import { ArticleCard, DotHeading } from "@/components";
+import { allArticles } from "./constants";
 
 const ArticleSection = () => {
   return (
@@ -6,8 +7,8 @@ const ArticleSection = () => {
       <DotHeading title="all articles" variant="secondary" />
 
       <div className="flex flex-wrap items-start justify-between gap-x-16 gap-y-20 max-lg:justify-center">
-        {[1, 2, 3, 4, 5, 6].map((item) => (
-          <ArticleCard key={item} />
+        {allArticles.map((article) => (
+          <ArticleCard key={article.id} {...article} />
         ))}
       </div>
     </section>

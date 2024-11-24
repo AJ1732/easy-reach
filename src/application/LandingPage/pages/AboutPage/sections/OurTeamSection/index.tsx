@@ -7,11 +7,11 @@ const OurTeamSection = () => {
 
       <div>
         <header className="space-y-2 max-lg:text-center">
-          <h3 className="font-circularStd ~text-xl/3xl font-bold text-black">
+          <h3 className="font-circularStd font-bold text-black ~text-xl/3xl">
             Meet Our Dedicated Team
           </h3>
 
-          <p className="~text-sm/lg text-grey">
+          <p className="text-grey ~text-sm/lg">
             a passionate group dedicated to sustainable agriculture and a
             greener future.
           </p>
